@@ -1,0 +1,212 @@
+#carregando {
+    height: 500px;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+}
+
+#linha-marcacao {
+    height: 1px;
+    border: none;
+    background-color: #ddd;
+    box-shadow: 0 0.5px 0 #ccc;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 70%;
+}
+
+.logo{
+    width: 28px;
+}
+
+.coluna-dezenas {
+    /*border-style: dashed;
+    border-color: #0066b3;*/
+    width: 50%;
+}
+/*Megasena Estilos*/
+
+#megasena {
+    font-family: "Roboto";
+}
+
+#tabela-megasena {
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+}
+
+#valor-concurso-megasena {
+    color: #209869;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#estimativa-megasena {
+    padding-right: 30px;
+    color: #4c556c;
+    font-size: 14px;
+}
+
+#acumulou-megasena {
+    color: #0066b3;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#dezenas {
+    color: white;
+    background-color: #209869;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#titulo_megasena {
+    color: #209869;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#concurso-megasena {
+    color: #4c556c;
+    font-size: 14px;
+}
+
+/*Lotofácil Estilos*/
+#lotofacil {
+    background-color: white;
+    font-family: "Roboto";
+}
+
+#titulo_lotofacil {
+    color: #930089;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#tabela-lotofacil {
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+}
+
+#ganhadores-lotofacil {
+    color: #0066b3;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#concurso-lotofacil {
+    color: #4c556c;
+    font-size: 14px;
+}
+
+#valor-concurso-lotofacil {
+    color: #930089;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#dezenas-lotofacil {
+    text-align: center;
+    width: 20px;
+    color: #930089;
+    padding: 8px;
+    font-weight: bold;
+}
+#estimativa-lotofacil{
+    padding-right: 30px;
+    color: #4c556c;
+    font-size: 14px;
+    width: 45%;
+}
+
+/*Esilos Quina*/
+
+
+#quina {
+    font-family: "Roboto";
+}
+
+#tabela-quina {
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+}
+
+#valor-concurso-quina {
+    color: #260085;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#estimativa-quina {
+    padding-right: 30px;
+    color: #4c556c;
+    font-size: 14px;
+}
+
+#acumulou-quina {
+    color: #0066b3;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#dezenas_quina {
+    color: white;
+    background-color: #260085;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#titulo_quina {
+    color: #260085;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#concurso-quina {
+    color: #4c556c;
+    font-size: 14px;
+}
+
+/*Menu*/
+
+.menu{
+    color:#aaa;
+    font-family: "Roboto";
+    padding-left: 30px;
+    pointer-events:  "none";
+    text-decoration: none;
+}
+
+.menuActive{
+    font-family: "Roboto";
+    padding-left: 30px;
+    font-weight: bold;
+   
+}
+
+#titulo_megasena_menu{
+    color: #209869;
+    font-weight: bolder;
+}
+
+#titulo_lotofacil_menu{
+    color: #930089;
+    font-weight: bolder;
+}
+
+#titulo_quina_menu{
+    color: #260085;
+    font-weight: bolder;
+}
