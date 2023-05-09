@@ -4,7 +4,7 @@ const mega = {
     estimativa: "#209869",
     loteria: "#209869",
     bola: "#209869",
-    bolafonte: "#fff"
+    bolafonte: "#fff",
 };
 
 const quina = {

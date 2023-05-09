@@ -7,8 +7,9 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled(Link)`
+    font-family: "Roboto";
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration-line: none;
     margin-right: 20px;
     color: ${props => props.theme.loteria};

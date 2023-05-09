@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
+    font-family: "Roboto";
     width: 150px;
     height: 150px;
     position: absolute;
