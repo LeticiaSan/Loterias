@@ -1,8 +1,14 @@
-import { ContextoProvider } from "./contexts/Contexto";
-import Rotas from "./rotes";
+import { ResultadoContextProvider } from './contexts';
+import Rotas from './rotes';
+
+
 
 function App() {
-  return <ContextoProvider><Rotas /></ContextoProvider> 
+  return (
+    <ResultadoContextProvider>
+        <Rotas />
+    </ResultadoContextProvider>
+  );
 }
 
 export default App;

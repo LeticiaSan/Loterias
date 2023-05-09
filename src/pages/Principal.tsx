@@ -1,6 +1,3 @@
-import Megasena from "../components/Megasena";
-import Lotofacil from "../components/Lotofacil";
-import Quina from "../components/Quina";
 import { useContexto } from "../hooks";
 import "../css/estilos.css";
 import Menu from "../components/Menu";

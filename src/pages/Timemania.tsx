@@ -1,23 +1,23 @@
 import { ThemeProvider } from "styled-components";
 import { useContexto } from "../hooks";
-import { mega } from "../styles/theme";
 import Principal from "../components/Principal";
 import Carregando from "../components/Carregando";
-import Trevo from "../assets/trevo-megasena.png"
+import Trevo from "../assets/trevo-timemania.png"
+import { timemania as timemaniaTema } from "../styles/theme";
 
-export default function Megasena() {
+export default function Timemania() {
 
-    const { megasena } = useContexto()
+    const { timemania } = useContexto()
 
     function isCarregado() {
-        return !!megasena.numeroDoConcurso;
+        return !!timemania.numeroDoConcurso;
     }
 
     function renderElementos() {
 
         return (
-            <ThemeProvider theme={mega}>
-                <Principal resultado={megasena} logo={Trevo}/>
+            <ThemeProvider theme={timemaniaTema}>
+                <Principal resultado={timemania} logo={Trevo}/>
             </ThemeProvider>
         )
     }

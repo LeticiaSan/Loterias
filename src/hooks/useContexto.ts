@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { Contexto } from "../contexts/Contexto";
+import { ResultadoContext } from "../contexts";
 
-function useContexto() {
-    const contexto = useContext(Contexto);
-    return contexto;
+function useResultado() {
+    const resultado = useContext(ResultadoContext);
+    return resultado;
 }
 
-export default useContexto;
+export default useResultado;

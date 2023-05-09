@@ -179,6 +179,57 @@
     font-size: 14px;
 }
 
+/*Timenania*/
+
+#timemania {
+    font-family: "Roboto";
+}
+
+#tabela-timemania {
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+}
+
+#valor-concurso-timemania {
+    color: #00ff48;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#estimativa-timemania {
+    padding-right: 30px;
+    color: #4c556c;
+    font-size: 14px;
+}
+
+#acumulou-timemania {
+    color: #0066b3;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#titulo_timemania {
+    color: #00ff48;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#concurso-timemania {
+    color: #4c556c;
+    font-size: 14px;
+}
+
+#dezenas-timemania {
+    color: #049645;
+    background-color: #FFF600;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
 /*Menu*/
 
 .menu{
@@ -208,5 +259,10 @@
 
 #titulo_quina_menu{
     color: #260085;
+    font-weight: bolder;
+}
+
+#titulo_timemania_menu{
+    color: #00ff48;
     font-weight: bolder;
 }

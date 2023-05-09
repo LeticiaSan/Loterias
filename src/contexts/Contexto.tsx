@@ -1,28 +1,34 @@
-import { createContext, useEffect, useState } from "react";
-import { LoteriaProps, Props } from "../types";
-import Loteria from "../services/Loteria";
+import { createContext, useState, useEffect } from "react";
+import { LoteriaProps, Props } from "../types/index";
+import resultadoService from "../services/ResultadoService";
 
-const Contexto = createContext({} as LoteriaProps);
+const ResultadoContext = createContext({} as LoteriaProps);
 
-function ContextoProvider({children}:any){
-    const [megasena,setMegasena] = useState({} as Props);
-    const [lotofacil,setlotofacil] = useState({} as Props);
-    const [quina, setQuina] = useState({} as Props);
+function ResultadoContextProvider({ children }: any) {
+    const [megasena, setMegasena] = useState({} as Props);
+    const [timemania, setTimemania] = useState({} as Props)
+    const [quina, setQuina] = useState({} as Props)
 
-    useEffect(()=>{
-        ( async ()=>{
-            const resp = await Loteria.get();
-            setMegasena(resp.megasena);
-            setlotofacil(resp.lotofacil);
-            setQuina(resp.quina);
-        } )();
-    },[]);
+    async function buscaJogosLoteria() {
+        const megasenaResponse = await resultadoService.getUltimoResultadoMegaSena();
+        const timemaniaResponse = await resultadoService.getUltimoResultadoTimemania();
+        const quinaResponse = await resultadoService.getUltimoResultadoQuina();
+    
+        setMegasena(megasenaResponse);
+        setTimemania(timemaniaResponse);
+        setQuina(quinaResponse);
+    }
+
+    useEffect(() => {
+        buscaJogosLoteria()
+    }, []);
 
     return (
-      <Contexto.Provider value = {{megasena, lotofacil, quina}}>
-        {children}
-      </Contexto.Provider>
+        <ResultadoContext.Provider value={{megasena, timemania, quina}}>
+            {children}
+        </ResultadoContext.Provider>
     );
-  }
 
-  export { Contexto, ContextoProvider };
+}
+
+export {ResultadoContext, ResultadoContextProvider};
